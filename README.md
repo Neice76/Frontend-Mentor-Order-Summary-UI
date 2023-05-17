@@ -22,7 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="374" alt="Screenshot 2023-05-16 at 8 19 44 PM" src="https://github.com/Neice76/Frontend-Mentor-Order-Summary-UI/assets/52137719/0248eae8-12bd-4730-8474-fad39c75ab06">
+<img width="1435" alt="Screenshot 2023-05-16 at 8 19 21 PM" src="https://github.com/Neice76/Frontend-Mentor-Order-Summary-UI/assets/52137719/7d5b3b80-6c7f-440b-a5db-0e59a0961df3">
 
 ### Links
 
