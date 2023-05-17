@@ -1,0 +1,171 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --box-shadow: hsla(224, 23%, 55%, 0.5);
+    --hover-accent: hsl(245, 80%, 68%);
+}
+
+@font-face {
+    font-family: RedHatDisplay-Medium;
+    src: url("./fonts/RedHatDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: RedHatDisplay-Bold;
+    src: url("./fonts/RedHatDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: RedHatDisplay-Black;
+    src: url("./fonts/RedHatDisplay-Black.ttf");
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: var(--pale-blue) url('./images/pattern-background-mobile.svg') no-repeat top left;
+    background-size: 50%;
+    font-family: RedHatDisplay-Medium, sans-serif;
+}
+
+main > .summaryComponent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.summaryComponent {
+    height: 500px;
+    width: 405px;
+    margin-top: 30%;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px var(--box-shadow);
+}
+
+.summaryImage {
+    width: 402px;
+    height: 160px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: -180px 0px 10px 0px;
+}
+
+.summaryTitle {
+    margin: 20px 0px 10px 10px;
+    font-size: 30px;
+    font-family: RedHatDisplay-Bold;
+}
+
+.summaryDescription {
+    font-size: 16px;
+    font-family: RedHatDisplay-Medium;
+    opacity: 0.7;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+    line-height: 2;
+}
+
+.summaryPlan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0px;
+    border-radius: 10px;
+    width: 19em;
+    height: 17%;
+    justify-content: space-evenly;
+    background: var(--very-pale-blue);
+}
+
+.summaryPlan > .summaryPlanDescription {
+    margin: 0px 0px 0px 10px;
+}
+
+.summaryPlanName,
+.summaryPlanPrice {
+    margin: 5px 0px 0px 0px;
+}
+
+.summaryPlanName {
+    font-family: RedHatDisplay-Bold, sans-serif;
+}
+
+.summaryPlanPrice {
+    opacity: 0.6;
+}
+
+.summaryPlan > .summaryChange {
+    color: var(--bright-blue);
+    text-decoration: underline;
+    margin: 0px 0px 0px 60px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.summaryPlan > .summaryChange:hover {
+    text-decoration: none;
+    color: var(--hover-accent);
+}
+
+.paymentButton {
+    background: var(--bright-blue);
+    color: var(--white);
+    border: none;
+    width: 23em;
+    height: 3em;
+    margin: 20px 0px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--bright-blue);
+}
+
+.paymentButton:hover {
+    background: var(--hover-accent);
+    box-shadow: 0px 5px 10px var(--hover-accent);
+}
+
+.orderText {
+    opacity: 0.6;
+}
+
+.orderText:hover {
+    opacity: 1;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--bright-blue); 
+    text-decoration: none; 
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .summaryComponent {
+        margin-top: 50%;
+        width: 20em;
+        height: 30em;
+    }
+
+    .summaryImage {
+        width: 20em;
+    }
+
+    .paymentButton {
+        width: 22em;
+    }
+}
